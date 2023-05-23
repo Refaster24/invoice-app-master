@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+
+body{
+    font-family: 'League Spartan', sans-serif;
+}
+:focus-visible{
+    outline:5px dashed #4f5796;
+}
+
+::-webkit-scrollbar{
+    background-color:transparent;
+
+}
+::-webkit-scrollbar-thumb{
+    background-color:#7c5dfa;
+    border-radius: 4em;
+    -webkit-border-radius: 4em;
+    -moz-border-radius: 4em;
+    -ms-border-radius: 4em;
+    -o-border-radius: 4em;
+}
+
+.paid,
+.pending,
+.draft{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding:.5em 1em;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    text-transform: capitalize;
+}
+
+.paid::before,
+.pending::before,
+.draft::before{
+    content: '';
+    display: block;
+    width: 7px;
+    height: 7px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.paid{
+    background-color: rgba(51,214,159,.0571);
+    color:#33d69f;
+}
+
+.paid::before{
+    background-color: #33d69f;
+}
+
+.pending{
+    background-color: rgba(255,143,0,.0571);
+    color: #ff8f00;
+}
+
+.pending::before{
+    background-color: #ff8f00;
+}
+
+.draft{
+    background-color: rgba(55,59,83,.0571);
+    color: black;
+}
+
+.draft::before{
+    background-color: black;
+}
+
+.dark .draft{
+    background-color: rgba(223,227,250,.0571);
+    color:#fff;
+}
+
+.dark .draft::before{
+    background-color: #fff;
+}
+
