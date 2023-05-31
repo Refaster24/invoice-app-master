@@ -23,12 +23,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./design/desktop-preview.jpg)
+![](./preview.jpg)
 
 
 ### Links
 
-- Live Site URL: [https://lustrous-starlight-0f7f35.netlify.app](https://lustrous-starlight-0f7f35.netlify.app)
+- Live Site URL: [https://invoice-app-master.netlify.app/](https://invoice-app-master.netlify.app/)
 
 ## My process
 
